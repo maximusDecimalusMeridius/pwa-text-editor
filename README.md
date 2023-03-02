@@ -17,7 +17,9 @@ Installation isn't required - this app is deployed to Heroku and can be accessed
 
 ## Usage
 
-To use the app, simply type your text into the text field.  Clicking off of the text field will save your entry in indexedDB and localStorage, whether online or offline.  
+To use the app, simply type your text into the text field.  Clicking off of the text field will save your entry in indexedDB and localStorage, whether online or offline.
+
+The first time a user visits the page, an indexedDB database is created and header data is populated.  After that, indexedDB and localStorage data are queried to populate the text editor.
 
 ![Testing Thumbnail](./site-thumbnail.png)
 
