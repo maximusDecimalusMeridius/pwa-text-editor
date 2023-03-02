@@ -37,16 +37,16 @@ warmStrategyCache({
 });
 
 registerRoute(({ request }) => request.mode === 'navigate', pageCache);
-// registerRoute(({ request }) => request.destination === 'style' || request.destination === "script" || request.destination === "image", assetCache);
+registerRoute(({ request }) => request.destination === 'style' || request.destination === "script" || request.destination === "image", assetCache);
 
-// self.addEventListener('install', (event) => {
-//   console.log('Service worker installed');
-//   event.waitUntil(self.skipWaiting());
-//   });
+self.addEventListener('install', (event) => {
+  console.log('Service worker installed');
+  event.waitUntil(self.skipWaiting());
+  });
   
-//   self.addEventListener('activate', (event) => {
-//   console.log('Service worker activated');
-//   event.waitUntil(self.clients.claim());
-//   });
+  self.addEventListener('activate', (event) => {
+  console.log('Service worker activated');
+  event.waitUntil(self.clients.claim());
+  });
 
 registerRoute();
