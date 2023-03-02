@@ -16,6 +16,11 @@ body {
     sans-serif;
 }
 
+img {
+  height: auto;
+  width: auto;
+}
+
 h1 {
   font-size: 22px;
 }
