@@ -9,29 +9,21 @@ This was a bootcamp challenge to debug and implement algorithms into starter cod
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [Contributing](#contributing)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
 
-Installation isn't required - this app is deployed to Heroku.
+Installation isn't required - this app is deployed to Heroku and can be accessed here: https://pwa-editor-of-text.herokuapp.com/
 
 ## Usage
 
-To access the app, please visit the website - [link]
+To use the app, simply type your text into the text field.  Clicking off of the text field will save your entry in indexedDB and localStorage, whether online or offline.  
+
+![Testing Thumbnail](./site-thumbnail.png)
 
 ## License
 
 MIT License - Please refer to the LICENSE in the repo.
-
-## Contributing
-
-N/A
-
-## Tests
-
-N/A
 
 ## Questions
 
