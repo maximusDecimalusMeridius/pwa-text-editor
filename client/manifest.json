@@ -1,0 +1,9 @@
+{
+    "name": "Test app",
+    "icons": [
+        {
+            "src": "./src/images/logo.png",
+            "type": "image/png"
+        }
+    ]
+}
