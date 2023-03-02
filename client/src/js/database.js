@@ -16,8 +16,8 @@ const initdb = async () =>
 export const putDb = async (content) => {
   const db = await openDB("jate", 1);
   const tx = db.transaction("jate", "readwrite");
-  const store = tx.objecStore("jate");
-  const request = store.add({ text: content })
+  const store = tx.objectStore("jate");
+  const request = store.put({ text: content, id: 1 })
   
   const result = await request;
   if(!result){
@@ -28,6 +28,14 @@ export const putDb = async (content) => {
 };
 
 // TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => console.error('getDb not implemented');
+export const getDb = async () => {
+  const db = await openDB('jate', 1);
+  const tx = db.transaction('jate', 'readonly');
+  const store = tx.objectStore('jate');
+  const request = store.getAll();
+  const result = await request;
+  console.log('result.value', result);
+  return result;
+};
 
 initdb();
